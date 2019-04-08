@@ -1,9 +1,11 @@
-const credentials = require('./credentials.js')
+// const credentials = require('./credentials.js')
 const request = require('request')
+
+const API_KEY = process.env.API_KEY
 
 const omdbMovie = function( title, callback ) {
   const url = 'http://www.omdbapi.com/?t=' + title + 
-  '&apikey=' + credentials.apikey
+  '&apikey=' + API_KEY.apikey
   console.log(url)
   request({ url, json: true }, function(error, response ) {
     if (error) {
@@ -26,7 +28,7 @@ const omdbMovie = function( title, callback ) {
 const omdbSeason = function( title, seasonNo, callback ) {
   const url = 'http://www.omdbapi.com/?t=' + title + 
   '&Season=' + seasonNo +
-  '&apikey=' + credentials.apikey 
+  '&apikey=' + API_KEY.apikey 
   request({ url, json: true }, function(error, response ) {
     if (error) {
       callback('Service unavailable', undefined)
