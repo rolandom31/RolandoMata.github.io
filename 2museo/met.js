@@ -1,4 +1,4 @@
-const request = require("request");
+const request = require('request');
 
 const busqueda = function (search, callback) {
   const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`;
@@ -33,4 +33,4 @@ const ID = function (id, callback) {
   });
 };
 
-module.exports = { searchMet, searchID };
+module.exports = { busqueda, ID };
