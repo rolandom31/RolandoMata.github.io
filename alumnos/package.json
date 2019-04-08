@@ -1,0 +1,24 @@
+{
+  "name": "rolandom31.github.io",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/rolandom31/RolandoMata.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolandom31/rolandom31.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolandom31/rolandom31.github.io/issues"
+  },
+  "homepage": "https://github.com/rolandom31/rolandom31.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
