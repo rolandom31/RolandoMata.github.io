@@ -13,7 +13,7 @@ app.get('/weather', function(req, res) {
     }
   weather.city(req.query.search, function(error, response){
     weather.darksky(response.lat, response.lon, function(error, response){
-      const respuesta = `${response.summary}.Aactualmente está a ${response.clima}ºC. Existe ${response.precipitacion}%de probabilidad de lluvia.`
+      const respuesta = `${response.summary}.Aactualmente está a ${response.temperatura}ºC. Existe ${response.lluvia}%de probabilidad de lluvia.`
       return res.send({
         clima:respuesta
       })
